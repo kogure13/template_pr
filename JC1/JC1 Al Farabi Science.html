@@ -1,0 +1,1538 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style type="text/css">
+
+			@media print {
+			    body {
+			        size: A4 portrait;
+			        padding-top: 0mm;
+			        padding-left: 0mm;
+			        padding-right: 0mm;
+			        background-color: white;
+			        font-family: sans-serif;
+
+			        max-width: 210mm;
+			        max-height: 297mm;
+			    }
+
+			    .wrapperdata {
+			        page-break-inside: avoid;
+			    }
+
+			    .wrapperhead {
+			        page-break-inside: avoid;
+			    }
+
+			    .wrapper {
+			        page-break-inside: avoid;
+			    }
+
+			    .wrappertail { /* 19 march */
+			        page-break-inside: avoid;
+			    }
+
+			    .wrapperbodycomment {
+			        page-break-inside: avoid;
+			    }
+			    .wrapperperilaku {
+			        page-break-inside: avoid;
+			    }
+
+			}
+
+
+			@media screen {
+			    body {
+			        size: A4 portrait;
+			        margin-left: 80px;
+			        font-family: sans-serif;
+			        font-size: 12pt;
+			        max-width: 260mm;
+
+
+			    }
+			}
+			.main{
+			    width: 100%;
+			    height:auto;
+			    padding-top: 20px;
+			    background:white;
+			    margin-top: 0px;
+			}
+			  p{
+			    margin:0
+			}
+			.kotakatas {
+			    display: grid;
+			    box-sizing: border-box;
+			    border-bottom: 3px solid black;
+			    border-top: 3px solid black;
+			    border-left: 3px solid black;
+			    border-right: 3px solid black;
+			}
+			.wrapperdata {
+			    display: grid;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(35, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a b b b b b b b c c c c c c c c d d d d d d d d d"
+			                         "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 b1 b1 b1 b1 b1 b1 b1 c1 c1 c1 c1 c1 c1 c1 c1 d1 d1 d1 d1 d1 d1 d1 d1 d1";
+			}
+
+			.wrapperdata2 {
+			    display: grid;
+			    padding-top: 5px;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(59, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "p a a a a a a a a a a d2 e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e";
+			}
+
+
+			.wrapper {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    padding-top: 120px;
+			    grid-template-areas:  "a";
+			}
+			.wrapper2 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a";
+			}
+			.wrapperhead1 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(35, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a a a a a a a a a a a b b b b b b b b b b b b b b b b b b b b b b b b"
+			        "a a a a a a a a a a a b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2 b2 b3 b3 b3 b3 b3 b3 b4 b4 b4 b4 b4 b4";
+			}
+
+			.wrapperbody1 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(35, 1fr);
+			    font-size: 10pt;
+			    font-weight: bold;
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2 b2 b3 b3 b3 b3 b3 b3 b4 b4 b4 b4 b4 b4";
+
+			}
+			.wrapperbody2 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(35, 1fr);
+			    font-size: 10pt;
+			    font-weight: bold;
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a b1 b1 b1 b2 b2 b2 c1 c1 c1 c2 c2 c2 d1 d1 d1 d2 d2 d2 d3 d3 d3 d3 d3 d3 d3 d3 d3";
+
+			}
+			.wrapperbawah {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(35, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:
+			        "a a a a a a a a a a a a a a b b b b b b c c c c c c c c c c c c c c c";
+
+			}
+			.wrapperbawahkiri {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(14, 1fr);
+			    font-size: 9pt;
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a a a a a a a a a a a b c d"
+			        "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 b1 c1 d1"
+			        "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 b2 c2 d2"
+			        "a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 b3 c3 d3";
+
+			}
+			.wrapperbawahkanan {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    font-size: 9pt;
+			    grid-template-columns: repeat(15, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a a a a a a a a a a a a b c d"
+			                          "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 b1 c1 d1"
+			                          "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 b2 c2 d2"
+			                          "a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 b3 c3 d3";
+
+			}
+			.wrapperbawahkanan2 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    font-size: 9pt;
+			    grid-template-columns: repeat(15, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a a a a a a a a a a a a b b b";
+			}
+			.wrapperbawah1 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(10, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:
+			        "a a  b b b b c d e e";
+
+			}
+
+			.wrapperbawahgaris {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a";
+			}
+			            .wrapperbawahkiri1 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(25, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a a a a a a a a b c c c c c c";
+			}
+			.wrapperbawahkiri2 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(29, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a a a a a a a a a a a a b c c d d e e"
+			        "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 b2 c2 c2 d2 d2 e2 e2";
+			}
+
+			.wrapperbawahkanan1 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(25, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a a a a a b c  c  c  c  c  c  c  c  c"
+			        "a a a a a a a a a a a a a a a b c1 c1 c1 d1 d1 d1 e1 e1 e1";
+			}
+			.wrapperspasi {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    padding-bottom: 2px;
+			    grid-template-areas: "a";
+			}
+			.wrapperbody3 {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(26, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:
+			        "a  a  a  a  a  a  a  a  b  c  d  e  f1 g1 g1 g1 g1 g1 g1 g1 g1 h1 i  i  i  i"
+			        "a1 a1 a1 a1 a1 a1 a1 a1 b1 c1 d1 e1 f1 g1 g1 g1 g1 g1 g1 g1 g1 h1 i1 i1 i1 i1";
+			}
+
+
+
+			.wrapperbody3111 {
+			    display: grid;
+			    font-family: sans-serif;
+
+			    box-sizing: border-box;
+			    height: 20px;
+			    grid-template-columns: repeat(36, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a a b b b c c c c c c c c c c c c c c c c c c c c c"
+			        "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 b1 b1 b1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1";
+			}
+			.wrapperbodyabsen {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+
+			    grid-template-columns: repeat(10, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a b b b c c c d d d";
+			}
+			.ukurantulisan11 {
+			    font-size: 11pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan12 {
+			    font-size: 12pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan121 {
+			    font-size: 12pt;
+
+			}
+			.ukurantulisan111 {
+			    font-size: 11pt;
+
+			}
+			.ukurantulisan9 {
+			    font-size: 9pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan14 {
+			    font-size: 14pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan16 {
+			    font-size: 16pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan18 {
+			    font-size: 18pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan10 {
+			    font-size: 10pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan10b {
+			    font-size: 10pt;
+			}
+			.ukurantulisan9 {
+			    font-size: 9pt;
+			}
+			.ukurantulisan9b {
+			    font-size: 9pt;
+			    font-weight: bold;
+			}
+			.ukurantulisan8 {
+			    font-size: 8pt;
+			}
+			.ukurantulisan8b {
+			    font-size: 8pt;
+			    font-weight: bold;
+			}
+			.wrapperbodyperingkat {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(40, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a b b b b c c d e e e e e f g h i i j j j k k k k k k k k k k k k k k k k k";
+			}
+
+
+			.wrapperhead4 {
+			    display: grid;
+			    font-family: cursive;
+			    background-color: windowframe;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(16, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:  "a a a b b b b b b b b b b b b b";
+			}
+			.backcolor {
+			    background-color: grey;
+			}
+			.wrapperjudulcomment {
+			    color: black;
+
+			    font-family: sans-serif;
+			    padding: 6px 3px 6px 3px;
+			    border: solid 1px;
+			    border-color: black;
+			}
+			.wrapperbodycomment1 {
+			    display: grid;
+			    font-family: sans-serif;
+
+			    padding: 4px 0px 0px 5px;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "b1";
+			}
+			.wrapperbodycomment2 {
+			    display: grid;
+			    font-family: sans-serif;
+
+			    padding: 1px 0px 20px 5px;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "b1";
+			}
+			.wrapperbodytgl {
+			    display: grid;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(59, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a a a a a a a a a a a a a a a a a a a a a a a a a a b b b b b b b b b b b b b c d d d d d d d d d d d d d d d d d";
+			}
+
+			.atten {
+			    box-sizing: border-box;
+
+			    font-family: sans-serif;
+			    color: black;
+			    padding: 8px 0px 8px 5px;
+			}
+			.wrapperheadatten {
+			    display: grid;
+			    box-sizing: border-box;
+
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(8, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "b1 b1 c1 d1 e1 f1 g1 h1";
+			}
+
+			.wrapperbodyatten {
+			    display: grid;
+			    color: black;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(8, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "b1 b1 c1 d1 e1 f1 g1 h1";
+			}
+
+			.allwhite {
+			    color: white;
+			    border-color: white;
+			}
+			.garisatasbawahw{
+			    border-bottom: 2px solid white;
+			    border-top: 2px solid white;
+			}
+			.gariskananw {
+			    border-right: 2px solid white;
+			}
+
+
+			.wrapperheadperilaku {
+			    display: grid;
+			    font-family: sans-serif;
+
+			    box-sizing: border-box;
+
+			    grid-template-columns: repeat(16, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a b b b b b b b b b b b b b b"
+			        "a a c c c c c c d d e e e e e e";
+			}
+			 .wrapperbanner {
+			    display: grid;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(12, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:
+			        "z z a a a a a a a b b b"
+			        "z z a a a a a a a b7 b7 b7"
+			        "z z a1 a1 a1 a1 a1 a1 a1 b2 b2 b2"
+			        "z z a2 a2 a2 a2 a2 a2 a2 b2 b2 b2"
+			        "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3"
+			        "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
+			        "b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5"
+			        "b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6";
+			}
+			.marginkirikanan3 {
+			    margin-left: 120px;
+			    margin-right: 30px;
+			}
+			.paddingpelajaran {
+			    padding: 5px 10px 2px 2px;
+			}
+			.paddingtulisanbawah {
+			    padding-left: 5px;
+			}
+			.padding1 {
+			    padding-top: 2px;
+			    padding-left: 2px;
+			}
+			.padding2 {
+			    padding-top: 2px;
+
+			}
+			.padding3 {
+			    padding-top: 5px;
+			}
+			.padding4 {
+			    padding-bottom: 5px;
+			}
+			.padding5 {
+			    padding-bottom: 10px;
+			}
+			.padding6 {
+			    padding-left: 150px;
+			}
+			.padding7 {
+			    padding-top: 5px;
+			    padding-bottom: 2px;
+			}
+			.wrapperbodyperilaku {
+			    display: grid;
+			    font-family: sans-serif;
+
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(16, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a a b b b b b b c c d d d d d d";
+			}
+
+			.wrapperperilaku {
+			    display: grid;
+			    font-family: sans-serif;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a";
+			}
+			.gariskiribawahkanan {
+			    border-left: 2px solid black;
+			    border-bottom: 2px solid black;
+			    border-right: 2px solid black;
+			}
+
+
+			.gariskanan3 {
+			    border-right: 3px solid black;
+			}
+			.gariskiri3 {
+			    border-left: 3px solid black;
+			}
+			.garisatas3 {
+			    border-top: 3px solid black;
+			}
+			.garisbawah3 {
+			    border-bottom: 3px solid black;
+			}
+
+
+			.garisbawah {
+			    border-bottom: 2px solid black;
+			}
+			.gariskiri {
+			    border-left: 2px solid black;
+			}
+			.garisatas {
+			    border-top: 2px solid black;
+			}
+			.gariskanan {
+			    border-right: 2px solid black;
+			}
+
+			.garisatasdouble {
+			    border-top: 4px double black;
+			}
+			.garisbawahdouble {
+			    border-bottom: 4px double black;
+			}
+			.gariskiridouble {
+			    border-left: 4px double black;
+			}
+			.gariskanandouble {
+			    border-right: 4px double black;
+			}
+
+			.gariskiribawah {
+			    border-left: 2px solid black;
+			    border-bottom: 2px solid black;
+			}
+			.gariskiribawah2 {
+			    border-left: 2px solid black;
+			    border-bottom: 4px double black;
+			}
+
+			.garisbawah2 {
+			    border-bottom: 4px double black;
+			}
+			.gariskiriatas {
+			    border-left: 2px solid black;
+			    border-top: 2px solid black;
+			}
+			.gariskiriatasbawah {
+			    border-left: 2px solid black;
+			    border-bottom: 2px solid black;
+			    border-top: 2px solid black;
+			}
+			.gariskananatasbawah {
+			    border-right: 2px solid black;
+			    border-bottom: 2px solid black;
+			    border-top: 2px solid black;
+			}
+			.garisatasbawah{
+			    border-bottom: 2px solid black;
+			    border-top: 2px solid black;
+			}
+			.gariskiriataskanan {
+			    border-top: 2px solid black;
+			    border-left: 2px solid black;
+			    border-right: 2px solid black;
+			}
+			.kotak {
+			    border-top: 2px solid black;
+			    border-left: 2px solid black;
+			    border-right: 2px solid black;
+			    border-bottom: 2px solid black;
+			}
+			.sign {
+			    padding-top: 95px;
+			    padding-left: 5px;
+			}
+
+
+			.wrappersign {
+			    display: grid;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(3, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas:
+			        "a5 a5 a5"
+			        "a4 a4 a4"
+			        "a3 a3 a3"
+			        "a2 a2 a2"
+			        "a1 b1 c1"
+			        "a b c";
+			}
+			.wrappersign2 {
+			    display: grid;
+			    box-sizing: border-box;
+			    grid-template-columns: repeat(3, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a1 b1 c1"
+			        "a b c";
+			}
+
+			.a {
+			    grid-area: a;
+			}
+			.a1 {
+			    grid-area: a1;
+			}
+			.a2 {
+			    grid-area: a2;
+			}
+			.a3 {
+			    grid-area: a3;
+			}
+			.a4 {
+			    grid-area: a4;
+			}
+			.a5 {
+			    grid-area: a5;
+			}
+			.a6 {
+			    grid-area: a6;
+			}
+			.b {
+			    grid-area: b;
+			}
+			.b1 {
+			    grid-area: b1;
+			}
+			.b2 {
+			    grid-area: b2;
+			}
+			.b3 {
+			    grid-area: b3;
+			}
+			.b4 {
+			    grid-area: b4;
+			}
+			.b5 {
+			    grid-area: b5;
+			}
+			.b6 {
+			    grid-area: b6;
+			}
+
+			.b7 {
+			    grid-area: b7;
+			}
+			.c {
+			    grid-area: c;
+			}
+			.c1 {
+			    grid-area: c1;
+			}
+			.c2 {
+			    grid-area: c2;
+			}
+			.c3 {
+			    grid-area: c3;
+			}
+			.c4 {
+			    grid-area: c4;
+			}
+			.c5 {
+			    grid-area: c5;
+			}
+			.c6 {
+			    grid-area: c6;
+			}
+			.d {
+			    grid-area: d;
+			}
+			.d1 {
+			    grid-area: d1;
+			}
+			.d2 {
+			    grid-area: d2;
+			}
+			.d3 {
+			    grid-area: d3;
+			}
+			.d4 {
+			    grid-area: d4;
+			}
+			.d5 {
+			    grid-area: d5;
+			}
+			.e {
+			    grid-area: e;
+			}
+			.e1 {
+			    grid-area: e1;
+			}
+			.e2 {
+			    grid-area: e2;
+			}
+			.e3 {
+			    grid-area: e3;
+			}
+			.e4 {
+			    grid-area: e4;
+			}
+			.e5 {
+			    grid-area: e5;
+			}
+			.f {
+			    grid-area: f;
+			}
+
+			.f1 {
+			    grid-area: f1;
+			}
+
+			.f2 {
+			    grid-area: f2;
+			}
+			.f3 {
+			    grid-area: f3;
+			}
+
+			.f4 {
+			    grid-area: f4;
+			}
+			.f5 {
+			    grid-area: f5;
+			}
+			.g {
+			    grid-area: g;
+			}
+			.g1 {
+			    grid-area: g1;
+			}
+			.g2 {
+			    grid-area: g2;
+			}
+			.g3 {
+			    grid-area: g3;
+			}
+			.g4 {
+			    grid-area: g4;
+			}
+			.g5 {
+			    grid-area: g5;
+			}
+			.h {
+			    grid-area: h;
+			}
+			.h1 {
+			    grid-area: h1;
+			}
+			.h2 {
+			    grid-area: h2;
+			}
+			.h3 {
+			    grid-area: h3;
+			}
+			.h4 {
+			    grid-area: h4;
+			}
+			.h5 {
+			    grid-area: h5;
+			}
+			.i {
+			    grid-area: i;
+			}
+			.i1 {
+			    grid-area: i1;
+			}
+			.i2 {
+			    grid-area: i2;
+			}
+			.i3 {
+			    grid-area: i3;
+			}
+			.i4 {
+			    grid-area: i4;
+			}
+			.i5 {
+			    grid-area: i5;
+			}
+			.z {
+			    grid-area: z;
+			}
+			.x {
+			    grid-area: x;
+			}
+			.x1 {
+			    grid-area: x1;
+			}
+			.x2 {
+			    grid-area: x2;
+			}
+			.x3 {
+			    grid-area: x3;
+			}
+			.x4 {
+			    grid-area: x4;
+			}
+			.x5 {
+			    grid-area: x5;
+			}
+			.x6 {
+			    grid-area: x6;
+			}
+			.x7 {
+			    grid-area: x7;
+			}
+			.x8 {
+			    grid-area: x8;
+			}
+			.x9 {
+			    grid-area: x9;
+			}
+			.y {
+			    grid-area: y;
+			}
+			.y1 {
+			    grid-area: y1;
+			}
+			.y2 {
+			    grid-area: y2;
+			}
+			.y3 {
+			    grid-area: y3;
+			}
+			.y4 {
+			    grid-area: y4;
+			}
+			.y5 {
+			    grid-area: y5;
+			}
+			.y6 {
+			    grid-area: y6;
+			}
+			.y7 {
+			    grid-area: y7;
+			}
+			.y8 {
+			    grid-area: y8;
+			}
+			.y9 {
+			    grid-area: y9;
+			}
+			.j {
+			    grid-area: j;
+			}
+			.k {
+			    grid-area: k;
+			}
+
+			.tulisantgl {
+			    font-size: 12px;
+			}
+			.spasitulisan {
+			    padding: 30px 0px 3px 0px;
+			}
+			.textjudul1 {
+
+			    font-family: sans-serif;
+			}
+
+			.textjudul2 {
+			    font-family: sans-serif;
+			}
+
+
+			.p {
+			    font: bold;
+			    display: grid;
+			    font-weight: bold;
+
+			    box-sizing: border-box;
+			    padding: 6px 3px 6px 10px;
+			    grid-template-columns: repeat(1, 1fr);
+			    grid-template-rows: auto;
+			    grid-template-areas: "a";
+			}
+			.gambartengah2 {
+			    display: block;
+			    align-items: center;
+			    margin-top: auto;
+			    text-align: center;
+			}
+			.textunderline {
+			    text-decoration: underline;
+			}
+			.texttengah {
+			    display: grid;
+			    align-items: center;
+			    text-align: center;
+			}
+			.texttengah5 {
+			    display: grid;
+			    align-items: center;
+			}
+			.texttengah2 {
+			    display: grid;
+			    text-decoration: underline;
+			    align-items: center;
+			    text-align: center;
+			}
+			.texttengah3 {
+			    display: grid;
+			    align-items: center;
+			    padding-left: 30px;
+
+			}
+			.texttengah4 {
+			    display: grid;
+			    align-items: center;
+			}
+			.textratakanan {
+			    display: grid;
+			    text-align: right;
+			    align-items: center
+			}
+			.lebar {
+			    max-height: 20px;
+			}
+			.textratakiri {
+			    display: grid;
+			    text-align: left;
+			    align-items: center
+			}
+			.gambartengah {
+			    display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.textkeputusan {
+			    padding: 5px; /* 0px 0px 5px; */
+			}
+
+
+			.texttengahkiri {
+			    display: grid;
+			    align-items: center;
+			    text-align: left;
+			    padding-left: 3px;
+			}
+			.texttengahkanan {
+			    display: grid;
+			    align-items: center;
+			    text-align: right;
+			}
+			.textcomment {
+			    text-align: justify;
+			    padding: 5px 5px 5px 5px;
+			}
+			.tulisanbody {
+			    padding: 5px 0px 5px 3px;
+			    font-family: sans-serif;
+			}
+			.tulisanbody2 {
+			    padding: 2px 0px 2px 0px;
+			    font-family: sans-serif;
+			}
+			.tulisanhead {
+			    padding: 1px 0px 1px 1px;
+
+			    font-family: sans-serif;
+			}
+			.textkekanan {
+			    padding-left: 5px;
+			}
+			.hide_group {
+			    display: none;
+			}
+			.textkebawah {
+			    text-combine-upright: all;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="wrapperbanner">
+				<div class="z ukurantulisan12 texttengah"></div>
+				<div class="a gambartengah">
+					<img
+						src="https://i.ibb.co/L60LBzm/Arabic-high-copy.png"
+						width="250"
+					/>
+				</div>
+				<div class="b ukurantulisan8b textratakanan">
+					Progress Report 1 2022/2023
+				</div>
+				<div class="a1 ukurantulisan12 texttengah">
+					AL-IRSYAD SATYA ISLAMIC SCHOOL
+				</div>
+				<div class="a2 ukurantulisan12 texttengah"></div>
+				<div class="b7 ukurantulisan8b textratakanan">Term 1 / Semester 1</div>
+				<div class="b2 ukurantulisan8b textratakanan">Junior College (SMA)</div>
+				<div class="b3 ukurantulisan10 garisbawah textratakanan"></div>
+				<div class="b4 ukurantulisan8 texttengah">
+					Jl Raya Parahyangan Km 2,7 Kota Baru Parahyangan, Padalarang - Bandung
+					Barat
+				</div>
+				<div class="b5 ukurantulisan10 garisbawah texttengah"></div>
+				<div class="b6 ukurantulisan10 padding4 texttengah"></div>
+			</div>
+
+			<div class="kotakatas">
+				<div class="wrapperdata">
+					<div class="textjudul1 ukurantulisan8b padding1 a">Name :</div>
+					<div
+						id="stdname"
+						class="textjudul2 garisbawah ukurantulisan10 padding1 a1 studentinfo_link_enable"
+					>
+						&nbsp;
+					</div>
+					<div class="textjudul1 gariskiri ukurantulisan8b padding1 b">
+						NIS :
+					</div>
+					<div
+						id="stdid"
+						class="textjudul2 gariskiri garisbawah ukurantulisan10 padding1 b1 studentinfo_link_enable"
+					></div>
+					<div class="textjudul1 gariskiri ukurantulisan8b padding1 c">
+						Class :
+					</div>
+					<div
+						id="level_replacement"
+						class="textjudul2 garisbawah studentinfo_link_enable gariskiri ukurantulisan10 padding1 c1"
+					>
+						JC1 Al Farabi Science
+					</div>
+					<div class="textjudul1 gariskiri ukurantulisan8b padding1 d">
+						FT :
+					</div>
+					<div
+						id="level_replacement"
+						class="textjudul2 garisbawah studentinfo_link_enable gariskiri ukurantulisan10 padding1 d1"
+					>
+						Mr. Ade Firman M.
+					</div>
+				</div>
+
+				<div class="wrapperbody1 padding3"></div>
+
+				<div class="wrapperhead1">
+					<div
+						class="garisbawahdouble ukurantulisan121 garisatasdouble texttengah tulisanhead a"
+					>
+						SUBJECTS
+					</div>
+					<div
+						class="gariskiribawah ukurantulisan9 garisatasdouble texttengah tulisanhead b"
+					>
+						Continuous Assessment 1 (CA 1)
+					</div>
+					<div
+						class="gariskiri garisbawahdouble ukurantulisan9 texttengah tulisanhead b3"
+					>
+						Practical
+					</div>
+					<div
+						class="gariskiri garisbawahdouble ukurantulisan9 texttengah tulisanhead b2"
+					>
+						Cognitive
+					</div>
+					<div
+						class="gariskiri garisbawahdouble ukurantulisan9 texttengah tulisanhead b1"
+					>
+						Passing Mark
+					</div>
+					<div
+						class="gariskiri garisbawahdouble ukurantulisan9 texttengah tulisanhead b4"
+					>
+						Overall
+					</div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Islamiyat</div>
+					<div
+						id="___resislamic1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resislamic2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">50</div>
+					<div
+						id="___resislamic4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Civic Education</div>
+					<div
+						id="___rescivic1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark backcolor column_content active_element"
+					></div>
+					<div
+						id="___rescivic2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">65</div>
+					<div
+						id="___rescivic4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Bahasa Indonesia</div>
+					<div
+						id="___resindo1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resindo2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">65</div>
+					<div
+						id="___resindo4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">English Language</div>
+					<div
+						id="___resenglish1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resenglish2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">50</div>
+					<div
+						id="___resenglish4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Mathematics</div>
+					<div
+						id="___resmath1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark backcolor column_content active_element"
+					></div>
+					<div
+						id="___resmath2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">50</div>
+					<div
+						id="___resmath4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">History</div>
+					<div
+						id="___reshis11"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark backcolor column_content active_element"
+					></div>
+					<div
+						id="___reshis12"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">65</div>
+					<div
+						id="___reshis14"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Art & Culture</div>
+					<div
+						id="___resart1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resart2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark backcolor column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">70</div>
+					<div
+						id="___resart4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Physical Education</div>
+					<div
+						id="___resphysical1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resphysical2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">70</div>
+					<div
+						id="___resphysical4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Physics</div>
+					<div
+						id="___resphysics1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resphysics2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">50</div>
+					<div
+						id="___resphysics4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Chemistry</div>
+					<div
+						id="___reschemistry1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___reschemistry2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">65</div>
+					<div
+						id="___reschemistry4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah paddingpelajaran a">Biology</div>
+					<div
+						id="___resbio1"
+						class="gariskiribawah texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resbio2"
+						class="gariskiribawah texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah texttengah b1">50</div>
+					<div
+						id="___resbio4"
+						class="gariskiribawah texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+				<div class="wrapperbody1">
+					<div class="a"></div>
+					<div class="garisbawah2 paddingpelajaran a">Quranic Studies</div>
+					<div
+						id="___resquran1"
+						class="gariskiribawah2 texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___resquran2"
+						class="gariskiribawah2 texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div class="gariskiribawah2 texttengah b1">65</div>
+					<div
+						id="___resquran4"
+						class="gariskiribawah2 texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+
+				<div class="wrapperbody1">
+					<div class="textkekanan paddingpelajaran textkekanan texttengah3 a">
+						Average
+					</div>
+					<div
+						id="___restotal1"
+						class="gariskiri texttengah b1 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___restotal2"
+						class="gariskiri texttengah b2 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___restotal3"
+						class="gariskiri texttengah b3 data_link_enable data_mark column_content active_element"
+					></div>
+					<div
+						id="___restotal4"
+						class="gariskiri texttengah b4 data_link_enable data_mark column_content active_element"
+					></div>
+				</div>
+			</div>
+
+			<br />
+			<div class="wrapperbawah ukurantulisan9b">
+				<div
+					class="garisatas3 gariskiri3 gariskanan3 garisbawah3 paddingpelajaran texttengah texttengah3 a"
+				>
+					Continuous Assessment 1 (CA 1)
+				</div>
+				<div
+					class="textkekanan paddingpelajaran textkekanan texttengah3 b"
+				></div>
+				<div
+					class="garisatas3 gariskiri3 gariskanan3 garisbawah3 paddingpelajaran texttengah texttengah3 c"
+				>
+					Continuous Assessment 1 (CA 1)
+				</div>
+			</div>
+
+			<div class="wrapperbawah">
+				<div class="wrapperbawahkiri a">
+					<div class="gariskiri3 padding3 gariskanan3 paddingtulisanbawah a">
+						Passed AQIS Subjects
+					</div>
+					<div class="gariskiri3 gariskanan3 paddingtulisanbawah a1">
+						Passed Language Subjects
+					</div>
+					<div
+						class="gariskiri3 garisbawah3 paddingtulisanbawah gariskanan3 a2"
+					>
+						Passed Humanities Subjects
+					</div>
+					<div class="a3"></div>
+
+					<div
+						id="___resqur1"
+						class="data_link_enable data_mark texttengah b column_content active_element"
+					></div>
+					<div class="texttengah c">/</div>
+					<div class="texttengah gariskanan3 d">2</div>
+
+					<div
+						id="___reslang1"
+						class="data_link_enable data_mark texttengah b1 column_content active_element"
+					></div>
+					<div class="texttengah c1">/</div>
+					<div class="texttengah gariskanan3 d1">2</div>
+
+					<div
+						id="___reshuman1"
+						class="data_link_enable data_mark texttengah garisbawah3 b2 column_content active_element"
+					></div>
+					<div class="texttengah garisbawah3 c2">/</div>
+					<div class="texttengah garisbawah3 gariskanan3 d2">2</div>
+
+					<div class="b3"></div>
+					<div class="c3"></div>
+					<div class="d3"></div>
+				</div>
+				<div
+					class="textkekanan paddingpelajaran textkekanan texttengah3 b"
+				></div>
+				<div class="wrapperbawahkanan c">
+					<div class="gariskiri3 padding7 gariskanan3 paddingtulisanbawah a">
+						Percentage Passed AQIS Subjects
+					</div>
+					<div class="gariskiri3 padding7 gariskanan3 paddingtulisanbawah a1">
+						Percentage Passed Language Subjects
+					</div>
+					<div class="gariskiri3 padding7 gariskanan3 paddingtulisanbawah a2">
+						Percentage Passed Humanities Subjects
+					</div>
+					<div
+						class="gariskiri3 padding7 garisbawah3 paddingtulisanbawah gariskanan3 a3"
+					>
+						English Speaking Proficiency
+					</div>
+
+					<div class="texttengah garisbawah3 b"></div>
+					<div
+						id="___resqur2"
+						class="data_link_enable data_mark texttengah garisbawah3 c column_content active_element"
+					></div>
+					<div class="texttengah5 gariskanan3 garisbawah3 d">%</div>
+
+					<div class="texttengah garisbawah3 b1"></div>
+					<div
+						id="___reslang2"
+						class="data_link_enable data_mark texttengah garisbawah3 c1 column_content active_element"
+					></div>
+					<div class="texttengah5 gariskanan3 garisbawah3 d1">%</div>
+
+					<div class="texttengah garisbawah3 b2"></div>
+					<div
+						id="___reshuman2"
+						class="data_link_enable data_mark texttengah garisbawah3 c2 column_content active_element"
+					></div>
+					<div class="texttengah5 gariskanan3 garisbawah3 d2">%</div>
+
+					<div class="texttengah garisbawah3 b3"></div>
+					<div
+						id="___resengprof"
+						class="data_link_enable data_qualitative texttengah garisbawah3 c3 column_content active_element"
+					></div>
+					<div class="texttengah5 gariskanan3 garisbawah3 d3"></div>
+				</div>
+			</div>
+			<br />
+			<div class="wrapperbawah ukurantulisan9b">
+				<div
+					class="garisatas3 gariskiri3 gariskanan3 garisbawah3 paddingpelajaran texttengah texttengah3 a"
+				>
+					Attendance
+				</div>
+				<div
+					class="textkekanan paddingpelajaran textkekanan texttengah3 b"
+				></div>
+
+				<div class="c wrapperbawahkanan2 kotak">
+					<div class="a texttengah ukurantulisan10b">Conduct</div>
+					<div
+						id="___resconduct"
+						class="b gariskiri ukurantulisan8 texttengah data_link_enable data_qualitative"
+					></div>
+				</div>
+			</div>
+			<div class="wrapperbawah">
+				<div class="wrapperbawahkiri a">
+					<div class="gariskiri3 padding3 gariskanan3 paddingtulisanbawah a">
+						Medical leave
+					</div>
+					<div class="gariskiri3 gariskanan3 paddingtulisanbawah a1">
+						Absence with permission
+					</div>
+					<div class="gariskiri3 gariskanan3 paddingtulisanbawah a2">
+						Absence without permission
+					</div>
+					<div
+						class="garisbawah3 gariskanan3 gariskiri3 paddingtulisanbawah a3"
+					>
+						Total Attendance
+					</div>
+
+					<div
+						id="___resatten1"
+						class="studentinfo_link_enable texttengah paddingtulisanbawah b column_content active_element"
+					>
+						0
+					</div>
+					<div class="texttengah c">of</div>
+					<div class="texttengah gariskanan3 d">48</div>
+
+					<div
+						id="___resatten2"
+						class="studentinfo_link_enable texttengah paddingtulisanbawah b1 column_content active_element"
+					>
+						0
+					</div>
+					<div class="texttengah c1">of</div>
+					<div class="texttengah gariskanan3 d1">48</div>
+
+					<div
+						id="___resatten3"
+						class="studentinfo_link_enable texttengah paddingtulisanbawah b2 column_content active_element"
+					>
+						0
+					</div>
+					<div class="texttengah c2">of</div>
+					<div class="texttengah gariskanan3 d2">48</div>
+
+					<div
+						id="___resatten4"
+						class="studentinfo_link_enable texttengah garisbawah3 paddingtulisanbawah b3 column_content active_element"
+					>
+						0
+					</div>
+					<div class="texttengah garisbawah3 c3">of</div>
+					<div class="texttengah garisbawah3 gariskanan3 d3">48</div>
+				</div>
+
+				<div
+					class="textkekanan paddingpelajaran textkekanan texttengah3 b"
+				></div>
+			</div>
+			<br />
+			<div class="wrapperbody2">
+				<div class="textkekanan a">Delivered in</div>
+				<div class="d3">Bandung Barat, 24 September 2022</div>
+			</div>
+
+			<div class="wrapper2 kotak">
+				<div class="wrappersign">
+					<div class="c1"></div>
+					<div class="gambartengah2 a1" style="height: 94px;">
+						<img src="https://i.ibb.co/KzSMFd7/Principal.png" width="140" style="display: none;" />
+					</div>
+					<div class="gambartengah2 b1">
+						<img src="https://i.ibb.co/QvFCYD1/Nurul.png" width="100" style="display: none;" />
+					</div>
+					<div class="texttengah2 ukurantulisan10 c"></div>
+					<div class="texttengah2 ukurantulisan10 b">Mr. Ade Firman M.</div>
+					<div class="texttengah2 ukurantulisan10 a">Mr. Ridwan Siddiq</div>
+				</div>
+
+				<div class="wrappersign2">
+					<div class="texttengah ukurantulisan10 a">Principal's Signature</div>
+					<div class="texttengah ukurantulisan10 b">
+						<strong>Form Teacher's Signature</strong>
+					</div>
+					<div class="texttengah garisatas ukurantulisan10 c">
+						<strong>Parent's / Guardian's Signature</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
